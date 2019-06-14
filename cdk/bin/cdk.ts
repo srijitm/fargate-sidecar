@@ -4,4 +4,4 @@ import cdk = require('@aws-cdk/cdk');
 import { CdkStack } from '../lib/sidecar-sample-stack';
 
 const app = new cdk.App();
-new CdkStack(app, 'CdkStack');
+new CdkStack(app, 'Sidecar-Sample-Stack');
