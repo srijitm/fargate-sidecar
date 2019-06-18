@@ -16,7 +16,10 @@ A shared volume is mounted on both containers (application and fluentd). The Tom
 
 ## Deployment Instructions
 
-*Note:* Instructions assume you have [AWS CDK installed](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html)
+*Note:* Instructions assume you have:
+
+* [AWS CDK](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html)
+* [TypeScript](https://www.npmjs.com/package/typescript)
 
 ```sh
 $ cd cdk
