@@ -24,7 +24,9 @@ A shared volume is mounted on both containers (application and fluentd). The Tom
 ### Steps
 
 ```sh
-$ cd cdk
+$ cd rest-helloworld
+$ mvn clean install
+$ cd ../cdk
 $ npm run build
 $ cdk bootstrap # Only required the first time
 $ cdk synth
