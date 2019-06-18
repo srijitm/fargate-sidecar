@@ -20,12 +20,14 @@ A shared volume is mounted on both containers (application and fluentd). The Tom
 
 * [AWS CDK](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html)
 * [TypeScript](https://www.npmjs.com/package/typescript)
+* [Java](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* [Maven](https://maven.apache.org/install.html)
 
 ### Steps
 
 ```sh
 $ cd rest-helloworld
-$ mvn clean install
+$ mvn clean install # To build the rest-helloworld application
 $ cd ../cdk
 $ npm run build
 $ cdk bootstrap # Only required the first time
