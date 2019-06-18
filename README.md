@@ -4,11 +4,11 @@ Fargate Sidecar is a sample project to demonstrate how CDK and Fargate can be le
 
 ## Overview
 
-The Fargate Sidecar project is derived from a real life request from a large enterprise customer. The customer's development team was in the midst of developing Java microservies using Spring Boot, hosted on Apache Tomcat. The CloudOps team was tasked to deploy and support this application. They quickly realized that they needed a container orchestration layer. The solution had to remove the operational overhead of provisioning, configuring and scaling virtual machines. AWS Fargate was the natural choice. AWS Fargate, however, expects the applications to follow containerization best practices. 
+The Fargate Sidecar project is derived from a real life request from a large enterprise customer. The customer's development team was in the midst of developing Java microservices using Spring Boot, hosted on Apache Tomcat. The CloudOps team was tasked to deploy and support this application. They quickly realized the need for a container orchestration engine. The solution had to reduce the operational overhead of provisioning, configuring and scaling virtual machines. AWS Fargate was the natural choice. AWS Fargate, however, expects the applications to follow containerization best practices such as the [12factor methodlogy](https://12factor.net).
 
 Out of the box, Tomcat produces multiple log files (access.log, catalina.out etc.). Without any application (code/config) changes the customer wanted all these log streams pushed to different AWS CloudWatch log groups. The customer was aware of the benefits of streaming logs to an aggregation service but time and resouce constraints meant that the operations team could not be retrained to use something like Splunk or ElasticSearch.
 
-The proposal was to implement a FluentD sidecar container. This would enable the CloudOps team to configure how the application logs would get streamed. The long term vision was to setup a FluentD aggregator to collect logs from all the applications and then stream them to AWS Kinesis [as shown in this blog post](https://aws.amazon.com/blogs/compute/building-a-scalable-log-solution-aggregator-with-aws-fargate-fluentd-and-amazon-kinesis-data-firehose/)
+The proposal was to implement a FluentD sidecar container. This would enable the CloudOps team to configure how the application logs would get streamed. The long term vision was to setup a FluentD aggregator to collect logs from all the applications and then stream them to AWS Kinesis [as shown in this blog post](https://aws.amazon.com/blogs/compute/building-a-scalable-log-solution-aggregator-with-aws-fargate-fluentd-and-amazon-kinesis-data-firehose/).
 
 ## Design
 
