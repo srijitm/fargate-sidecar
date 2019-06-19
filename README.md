@@ -16,8 +16,9 @@ A shared volume is mounted on both containers (application and fluentd). The Tom
 
 ## Deployment Instructions
 
-**Note**: Pre-Requisites
+###Pre-Requisites
 
+* [Docker](https://docs.docker.com/install/)
 * [AWS CDK](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html)
 * [TypeScript](https://www.npmjs.com/package/typescript)
 * [Java](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
